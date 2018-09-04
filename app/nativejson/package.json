@@ -2,9 +2,6 @@
   "name": "nativejson",
   "version": "0.1.0",
   "private": true,
-  "rnpm": {
-    "assets": ["./assets/fonts"]
-  },
   "devDependencies": {
     "jest-expo": "~27.0.0",
     "react-native-scripts": "1.14.0",
@@ -25,8 +22,7 @@
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
-    "react-navigation": "^2.12.1"
+    "react-navigation": "^2.12.1",
+    "rnpm": "^1.9.0"
   }
-
-
 }
