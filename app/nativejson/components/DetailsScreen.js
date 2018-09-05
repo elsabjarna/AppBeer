@@ -43,7 +43,7 @@ export default class DetailsScreen extends React.Component {
   }
 
   componentWillMount(){
-    fetch('http://82.148.66.32:2312/api')
+    fetch('http://10.11.44.180:2312/api')
     .then((data)=>data.json())
     .then((json)=>{
       this.setState({data:json});

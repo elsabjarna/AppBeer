@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import { Font } from 'expo';
 import Button from './Button';
+import { StatusBar } from 'react-native';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -34,9 +35,10 @@ export default class HomeScreen extends React.Component {
 
     return (
       <View style={{ backgroundColor: "#ff6421", flex: 1, alignItems: 'center', }}>
+      <StatusBar barStyle = "light-content" hidden = {false}/>
       { this.state.fontLoaded  ? (
         <React.Fragment>
-        <Image source={require('../images/beerslogo.png')} style={{width: 250, height: 220, marginTop: 80}}/>
+        <Image source={require('../images/beerslogo.png')} style={{width: 250, height: 220, marginTop: 30}}/>
 
         <Text style={styles.title}>ICELANDIC BEER ENCYCLOPEDIA</Text>
         <Text style={styles.undertext}>Remember to drink responsably</Text>
